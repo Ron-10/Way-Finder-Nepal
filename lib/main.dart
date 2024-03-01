@@ -1,6 +1,6 @@
 import 'package:firstproject/onboarding.dart';
 import 'package:flutter/material.dart';
-import 'homepage.dart';
+import 'Homescreen/homepage.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 void main() {
@@ -154,7 +154,7 @@ class _HomePageState extends State<HomePage> {
                     // Navigate to HomePage
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (_) => TourismRecommendation()),
+                      MaterialPageRoute(builder: (_) => TravelApp()),
                     );
                   }
                 },
@@ -333,7 +333,7 @@ class RegisterPage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (_) => TourismRecommendation()),
+                    builder: (_) => TravelApp()),
               );
               // Proceed with registration
               // Implement registration functionality here

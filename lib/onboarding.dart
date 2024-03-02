@@ -1,5 +1,6 @@
 import 'package:firstproject/compoments/color.dart';
 import 'package:firstproject/compoments/onboarding_data.dart';
+import 'package:firstproject/login/login.dart';
 import 'package:flutter/material.dart';
 
 import 'main.dart';
@@ -114,8 +115,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(
-                  builder: (context) =>
-                      HomePage()), // Navigate to the home screen
+                  builder: (context) => LoginPage()), // Navigate to the home screen
             );
           } else {
             setState(() {

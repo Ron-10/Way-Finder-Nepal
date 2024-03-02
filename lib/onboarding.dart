@@ -1,8 +1,8 @@
 import 'package:firstproject/compoments/color.dart';
 import 'package:firstproject/compoments/onboarding_data.dart';
+import 'package:firstproject/login/login.dart';
 import 'package:flutter/material.dart';
 
-import 'main.dart';
 
 class OnboardingPage extends StatefulWidget {
   const OnboardingPage({Key? key})
@@ -20,7 +20,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(255, 229, 229, 1),
+      backgroundColor: const Color.fromRGBO(255, 229, 229, 1),
       body: Column(
         children: [
           body(),
@@ -114,8 +114,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(
-                  builder: (context) =>
-                      HomePage()), // Navigate to the home screen
+                  builder: (context) => const LoginPage()), // Navigate to the home screen
             );
           } else {
             setState(() {
@@ -127,7 +126,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           currentIndex == controller.items.length - 1
               ? "Get started"
               : "Continue",
-          style: TextStyle(color: Colors.white),
+          style: const TextStyle(color: Colors.white),
         ),
       ),
     );
